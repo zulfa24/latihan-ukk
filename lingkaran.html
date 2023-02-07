@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menghitung</title>
+    </head>
+    <body>
+        <h1>Menghitung Luas Lingkaran</h1>
+        <input type="number" class="r" placeholder="r"><br>
+        <button onclick="luaslingkaran()">Hitung</button>
+        <hr>
+        <h5 class="hasil"></h5>
+
+        <script>
+            function luaslingkaran() {
+                const phi = 3.14;
+                const r = document.querySelector(".r").value;
+                const luas = phi*(r*r);
+                const hasil = document.querySelector(".hasil");
+                hasil.innerText= "Hasil Perhitungan Lingkaran = " + luas;
+            }
+        </script>
+
+    </body>
+</html>

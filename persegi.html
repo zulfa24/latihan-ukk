@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menghitung</title>
+    </head>
+    <body>
+        <h1>Menghitung Luas Persegi</h1>
+        <input type="number" id="sisi" placeholder="sisi"><br>
+        <button onclick="persegi()">Hitung</button>
+        <hr>
+        <h5 id="hasil"></h5>
+
+        <script>
+            function persegi() {
+                const sisi = document.getElementById("sisi").value;
+                const luas = sisi*sisi;
+                const hasil = document.getElementById("hasil");
+                hasil.innerText= "Hasil Perhitungan Luas Persegi = " + luas;
+            }
+        </script>
+
+    </body>
+</html>
